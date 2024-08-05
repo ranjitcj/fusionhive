@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Post</title>
+    <link rel="stylesheet" href="post.css">
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+</head>
+<body>
+    <div class="sidebar-overlay"></div>
+	<aside id="sidebar" class="sidebar sidebar-default sidebar-fixed-left" role="navigation">
+		<!-- Sidebar header -->
+		<div class="sidebar-header header-cover" style="background-image: url(https://2.bp.blogspot.com/-2RewSLZUzRg/U-9o6SD4M6I/AAAAAAAADIE/voax99AbRx0/s1600/14%2B-%2B1%2B%281%29.jpg);">
+			<!-- Top bar
+			<div class="top-bar"></div>
+			-->
+			<!-- Sidebar toggle button -->
+			<button type="button" class="sidebar-toggle">
+				<b style="color:black;">></b>
+			</button>
+			<!-- Sidebar brand image -->
+			<div class="sidebar-image">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53474/atom_profile_01.jpg">
+			</div>
+			<!-- Sidebar brand name -->
+			<a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+				<!-- USER -->
+
+				<?php
+					if(isset($_COOKIE["user_name"])){
+						echo $_COOKIE["user_name"];
+					}else {
+						echo "Cookie 'user' is not set!";
+					}
+				?>
+
+				<!-- <b class="caret"></b> -->
+			</a>
+
+		</div>
+        
+
+		<!-- Sidebar navigation -->
+		<ul class="nav sidebar-nav">
+			<!-- <li class="dropdown">
+				<ul id="settings-dropdown" class="dropdown-menu">
+					<li>
+						<a href="#" tabindex="-1">
+							Profile
+						</a>
+					</li>
+					<li>
+						<a href="#" tabindex="-1">
+							Settings
+						</a>
+					</li>
+
+						<li>
+							<a href="#" tabindex="-1">
+								Exit
+							</a>
+						</li>
+
+				</ul>
+			</li> -->
+			<li>
+				<a href="#">
+					<i class="sidebar-icon md-star"></i>
+					PROFILE
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="sidebar-icon md-send"></i>
+					HOME
+				</a>
+			</li>
+			<li>
+				<a href="/header/dashboard/index.php">
+					<i class="sidebar-icon md-send"></i>
+					DASHBOARD
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="sidebar-icon md-inbox"></i>
+					GLOBAL
+				</a>
+			</li>
+			<li class="divider"></li>
+			<li>
+				<a href="#">
+					<i class="sidebar-icon md-star"></i>
+					CLUBS
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="sidebar-icon md-send"></i>
+					ANNOUNCEMENT
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="sidebar-icon md-drafts"></i>
+					PROMOTIONS
+				</a>
+			</li>
+			<li class="divider"></li>
+			<li>
+				<a href="header/services.html">
+					<i class="sidebar-icon md-drafts"></i>
+					SERVICES
+				</a>
+			</li>
+			<li>
+				<a href="#" style="background-color: rgb(255, 173, 173);">
+					<i class="sidebar-icon md-send"></i>
+					Log-out
+				</a>
+			</li>
+			<!--
+			<li class="divider"></li>
+			<li class="dropdown">
+				<a class="ripple-effect dropdown-toggle" href="#" data-toggle="dropdown">
+					All Mail
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="#" tabindex="-1">
+							Social
+							<span class="sidebar-badge">12</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" tabindex="-1">
+							Promo
+							<span class="sidebar-badge">0</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">
+					Trash
+					<span class="sidebar-badge">3</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					Spam
+					<span class="sidebar-badge">456</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					Follow Up
+					<span class="sidebar-badge badge-circle">i</span>
+				</a>
+			</li> -->
+		</ul>
+		<!-- Sidebar divider -->
+		<!-- <div class="sidebar-divider"></div> -->
+
+		<!-- Sidebar text -->
+		<!--  <div class="sidebar-text">Text</div> -->
+	</aside>
+    <header class="headerBar">
+        <div class="logoName" ><span>Fusion</span>Hive</div>
+
+    <!-- Link sections -->
+    <div class="nav" id="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#footer">About</a></li>
+            <li><a href="header/services.html">Services</a></li>
+            <li>
+                    <a href="#">EXPLORE</a>
+                    <ul>
+                        <li><a href="">ANNOUNCEMENT</a></li>
+                        <li><a href="">NEWS</a></li>
+                        <li><a href="">CLUBS</a></li>
+                        <li><a href="">PROMOTIONS</a></li>
+                    </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <!-- <i id="hi" class="fa fa-user"></i> -->
+                    <!-- User -->
+                    <?php
+                        if(isset($_COOKIE["user_name"])){
+                            echo $_COOKIE["user_name"];
+                        }else {
+                            echo "Cookie 'user' is not set!";
+                        }
+                    ?>
+                    <i id="hi" class="fa fa-chevron-down"></i>
+                </a>
+                <ul>
+                    <li><a href="/header/userprofile/index.php">Dashboard</a></li>
+                    <li><a href="/header/register.html">Sign-out</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <i class="mt sidebar-toggle" >
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </i>
+</header>
+    
+
+    <div class="post-wrapper">
+        <img src="doodle6.png" alt="Post Image" class="post-img">
+        <div class="post-content">
+            <h1 class="post-title">The Beauty of Science Exhibitions</h1>
+            <p class="post-description">
+                Are you ready to unlock the world of endless possibilities through coding? Look no further! Our Coding Club offers an exciting opportunity for beginners and experienced coders alike to dive into the thrilling world of programming.
+
+            🚀 Why Join Us?
+
+            Learn from the Best: Our club is led by experienced instructors passionate about coding. Whether you're a complete novice or a seasoned pro, we have something for everyone.
+            Hands-On Projects: Get your hands dirty with real-world projects! From building websites to crafting mobile apps, you'll gain practical experience that sets you apart.
+            Collaborative Environment: Connect with like-minded individuals who share your passion for coding. Collaborate on projects, exchange ideas, and build lasting friendships.
+            Stay Ahead: In today's tech-driven world, coding skills are more valuable than ever. Gain the competitive edge you need to succeed in any field.
+            💡 What We Offer:
+
+            <ol><li>Weekly Coding Workshops</li>
+                <li>Hackathons and Coding Challenges</li>
+                <li>Guest Speaker Events</li>
+                <li>Mentorship Programs</li>
+                <li>Access to Resources and Tools</li>
+                <li>Networking Opportunities</li>
+            </ol>
+            🎉 Join the Coding Revolution Today! 🎉
+            Whether you dream of becoming a software engineer, launching your own startup, or simply want to explore the world of technology, our Coding Club is the perfect place to start your journey.
+
+            Don't miss out on this incredible opportunity! Sign up now and let's code the future together.
+
+            Visit website or contact us at [7038639695] to learn more and reserve your spot today!
+
+            #CodeWithUs #UnlockYourPotential #CodingClub
+            </p>
+            <div class="author-section">
+                <img src="image_1.png" alt="Author Image" class="author-img">
+                <div class="author-info">
+                    <h2>Author: Saindane Yugandhar</h2>
+                    <p>Saindane Yughandar is a passionate science educator and writer who loves to share the wonders of science with others. With a background in physics and a talent for communication, Saindane inspires young minds to explore and appreciate the beauty of science.</p>
+                    <p>Contact: <a href="mailto:abc@gmail.com">abc@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="logo-text">FUSION<span>HIVE</span></h1>
+                <p>
+                    Connecting Visionaries and Innovators
+                </p>
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i>&nbsp;987-654-321</span>
+                    <span><i class="fas fa-envelope"></i>&nbsp;info@fusionHive.com</span>
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+        <div class="footer-bottom">
+            &copy; codingpoets.com | Designed by Team Vikram
+        </div>
+    </footer>
+    <script src="sidebarscript.js"></script>
+</body>
+</html>

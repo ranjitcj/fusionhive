@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="stylesopfp.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        .header {
+        width: 100%;
+        height: 200px;
+        background-image: url('iitkanpurbg.avif'); /* Replace with actual background image */
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px 10px 0 0;
+        position: relative;
+        }
+    </style>
+    <title>College Profile</title>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="header">
+            <div class="background-overlay"></div>
+            <div class="logo-container">
+                <img src="iitkanpurlogo.png" alt="College Logo" class="college-logo"> <!-- Replace with IIT Kanpur logo -->
+                <div class="college-info">
+                    <div class="college-name">Indian Institute of Technology Kanpur (IIT Kanpur)</div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons-container">
+            <div class="buttons">
+                <button class="follow-btn" onclick="followCollege()">
+                    <i class="fas fa-user-plus"></i> Follow
+                </button>
+                <button class="visit-btn" onclick="visitWebsite()">
+                    <i class="fas fa-globe"></i> Visit Website
+                </button>
+            </div>
+        </div>
+        <div class="bio-container">
+            <p class="college-bio">The Indian Institute of Technology Kanpur (IIT Kanpur) is one of India's premier engineering institutions located in Kanpur, Uttar Pradesh. Established in 1959, IIT Kanpur has been at the forefront of technological education and research in the country. The institute offers undergraduate, postgraduate, and doctoral programs across various engineering and science disciplines. With a strong emphasis on research and innovation, IIT Kanpur houses several state-of-the-art laboratories and research centers. The campus also promotes extracurricular activities and has a vibrant student community. Click on read more to see the full bio.</p>
+            <button class="read-more-btn" onclick="toggleBio()">Read More</button>
+        </div>
+        <div class="tabs">
+            <button class="tab-link active" onclick="openTab(event, 'events')">Events</button>
+            <button class="tab-link " onclick="openTab(event, 'clubs')">Clubs</button>
+            <button class="tab-link " onclick="openTab(event, 'news')">News</button>
+        </div>
+        <div class="dropdown" id="mobileDropdown">
+            <select onchange="mobileTabChange(event)">
+                <option value="events">Events</option>
+                <option value="clubs">Clubs</option>
+                <option value="news">News</option>
+            </select>
+        </div>
+        <div class="tab-content">
+            <div id="events" class="content active">
+                <h2>Recent Events</h2>
+                <div class="events">
+                    <div class="event">
+                        <h3>Tech Symposium 2023</h3>
+                        <p>The annual Tech Symposium featuring talks by industry leaders, workshops, and competitions across various tech domains.</p>
+                    </div>
+                    <div class="event">
+                        <h3>Annual Sports Meet</h3>
+                        <p>A showcase of athletic talent, including various sports competitions and cultural performances by the students.</p>
+                    </div>
+                    <div class="event">
+                        <h3>Alumni Interaction 2023</h3>
+                        <p>An event where alumni share their experiences and insights with current students, fostering networking opportunities.</p>
+                    </div>
+                    <!-- Add more events as needed -->
+                </div>
+            </div>
+            <div id="clubs" class="content">
+                <h2>Clubs</h2>
+                <div class="clubs">
+                    <div class="club">
+                        <h3>Robotics Club</h3>
+                        <p>The Robotics Club focuses on building robots and participating in national competitions, fostering skills in engineering and programming.</p>
+                    </div>
+                    <div class="club">
+                        <h3>Entrepreneurship Cell</h3>
+                        <p>This cell encourages innovation and provides resources for students to start their ventures and participate in startup competitions.</p>
+                    </div>
+                    <div class="club">
+                        <h3>Literary Club</h3>
+                        <p>The Literary Club promotes literature and creative writing, organizing workshops, and literary fests.</p>
+                    </div>
+                    <!-- Add more clubs as needed -->
+                </div>
+            </div>
+            <div id="news" class="content">
+                <h2>News</h2>
+                <div class="news">
+                    <div class="news-item">
+                        <h3>New Research Center Established</h3>
+                        <p>IIT Kanpur inaugurates a new research center focused on sustainable energy solutions and environmental technologies.</p>
+                    </div>
+                    <div class="news-item">
+                        <h3>IIT Kanpur Ranks Among Top Global Institutes</h3>
+                        <p>The latest global rankings recognize IIT Kanpur's excellence in engineering education and research.</p>
+                    </div>
+                    <div class="news-item">
+                        <h3>Partnership with Leading Tech Firms</h3>
+                        <p>IIT Kanpur has signed MoUs with several leading tech companies to enhance collaborative research and internship opportunities for students.</p>
+                    </div>
+                    <!-- Add more news items as needed -->
+                </div>
+            </div>
+        </div>
+        <footer>
+            &copy; 2023 Indian Institute of Technology Kanpur. All rights reserved.
+        </footer>
+    </div>
+    <script src="scriptopfp.js"></script>
+</body>
+</html>

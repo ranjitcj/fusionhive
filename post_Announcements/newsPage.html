@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Announcements</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-image: url('jute.jpg');
+            background-color: #f8f9fa; /* Light gray background */
+            color: #333; /* Dark text color */
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-image: url("gra.jpeg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            
+            background-color: #fff; /* White background */
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Box shadow */
+        }
+        h1 {
+            text-align: center;
+            color: #001ea2; /* Blue header color */
+            font-family: 'Times New Roman', Times, serif, sans-serif; /* Different font for headers */
+            margin-bottom: 20px;
+            font-size: 4vw;
+        }
+        .news-bar {
+            overflow-x: auto;
+            white-space: nowrap;
+            background-color: #ff9900; /* Blue background for news bar */
+            color: #fff; /* White text color */
+            padding: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Lighter box shadow */
+            border-radius: 8px;
+        }
+        .news-item {
+            display: inline-block;
+            padding: 5px 10px;
+            border-right: 1px solid #c57600; /* Darker border color */
+            font-size: 14px;
+        }
+        .news-item:last-child {
+            border-right: none;
+        }
+        .announcement {
+            background-color: #fff;
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slightly lighter box shadow */
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .announcement h2 {
+            text-align: center;
+            color: #333;
+            font-family: 'Georgia', serif; /* Serif font for announcement titles */
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+        .details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #666;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        .details span {
+            font-family: 'Arial', sans-serif; /* Different font for details */
+        }
+        .separator {
+            width: 100%;
+            height: 1px;
+            background-color: #ccc; /* Light gray separator */
+            margin: 15px 0;
+        }
+        .content {
+            line-height: 1.6;
+            color: #444;
+            font-family: 'Arial', sans-serif; /* Different font for content */
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .announcement {
+                padding: 15px;
+            }
+            .news-bar {
+                padding: 5px;
+            }
+            .news-item {
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>College Announcements</h1>
+        
+        <!-- News Bar -->
+        <div class="news-bar" id="newsBar">
+            <div class="news-item">Latest News: Open seats for Second Year Student Association</div>
+            <div class="news-item">Recently declared Engineering results are out now</div>
+            <div class="news-item">Heavy Rainfall</div>
+            <!-- Repeat news items as needed -->
+        </div>
+        
+        <!-- Announcements -->
+        <div class="announcement">
+            <h2>Open seats for Second Year Student Association</h2>
+            <div class="details">
+                <span>Date: July 24, 2024</span>
+                <span>Publisher: College Administration</span>
+            </div>
+            <div class="separator"></div>
+            <div class="content">
+                <p>Dear Students,</p>
+                <p>We are pleased to announce that there are open seats available for the Second Year Student Association. This is a wonderful opportunity for you to get involved in shaping the activities and initiatives of the student body.</p>
+                <p>If you are passionate about representing your peers, organizing events, and contributing to the college community, we encourage you to apply for these positions.</p>
+                <p>Please visit the Student Affairs Office for more details and to submit your application. The deadline for applications is August 10, 2024.</p>
+                <p>Best regards,</p>
+                <p>College Administration</p>
+            </div>
+        </div>
+
+        <div class="announcement">
+            <h2>Recently Declared Engineering Results</h2>
+            <div class="details">
+                <span>Date: July 22, 2024</span>
+                <span>Publisher: Examination Department</span>
+            </div>
+            <div class="separator"></div>
+            <div class="content">
+                <p>Dear Students,</p>
+                <p>We are pleased to announce the results for the recent Engineering examinations. We congratulate all the students who have successfully cleared their examinations.</p>
+                <p>The detailed results are now available on the college website. Please log in to your student portal to view your individual results and marks.</p>
+                <p>If you have any questions or need further assistance regarding your results, please contact the Examination Department.</p>
+                <p>Best wishes for your future endeavors!</p>
+                <p>Examination Department</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for news bar scrolling
+        let newsBar = document.getElementById('newsBar');
+        let newsItems = newsBar.getElementsByClassName('news-item');
+        let index = 0;
+        setInterval(function() {
+            newsItems[index].style.display = 'none';
+            index = (index + 1) % newsItems.length;
+            newsItems[index].style.display = 'inline-block';
+        }, 3000); // Change news every 3 seconds (adjust as needed)
+    </script>
+</body>
+</html>

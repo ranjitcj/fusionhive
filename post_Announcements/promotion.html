@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Promotions</title>
+    <style>
+        body {
+            background-image: url("sparkle.jpg");
+            font-family: 'Roboto', sans-serif;
+            margin: 0 10px;
+            padding: 0;
+            background-color: #f0f0f0; /* Light gray background */
+            color: #333; /* Dark text color */
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.959); /* White background */
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Darker box shadow */
+        }
+        h1 {
+            text-align: center;
+            color: #e67e22; /* Orange header color */
+            font-family: 'Times new roman', sans-serif; /* Different font for headers */
+            margin-bottom: 20px;
+            border-bottom: 1px grey solid;
+            padding-bottom: 20px;
+        }
+        .promotions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .promotion-card {
+            background-color: #fff;
+            border: 2px solid #ccc; /* Light gray border */
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Golden shadow */
+            overflow: hidden;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            position: relative;
+        }
+        .promotion-card:hover {
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+            transform: scale(1.05); /* Scale up on hover */
+        }
+        .promotion-card img {
+            width: 100%;
+            aspect-ratio: 3/2;
+            /* height: auto; */
+            display: block;
+            border-bottom: 2px solid #ddd; /* Light gray bottom border for image */
+        }
+        .promotion-card .promotion-details {
+            padding: 15px;
+        }
+        .promotion-card h2 {
+            color: #3498db; /* Blue header color */
+            font-family: 'Playfair Display', serif; /* Serif font for title */
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .promotion-card .details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #777;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        .promotion-card .details span {
+            font-family: 'Arial', sans-serif; /* Different font for details */
+        }
+        .promotion-card p {
+            margin-top: 10px;
+            text-align: justify;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            .promotions {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+            .promotions {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>College Promotions</h1>
+        
+        <!-- Promotions Grid -->
+        <div class="promotions">
+            <!-- Promotion Card 1: Annual Coding Competition -->
+            <div class="promotion-card">
+                <img src="AnnualCodingCompetition.png" alt="Competition Ad">
+                <div class="promotion-details">
+                    <h2>Annual Coding Competition</h2>
+                    <div class="details">
+                        <span>Date: August 15, 2024</span>
+                        <span>Organizer: Computer Science Department</span>
+                    </div>
+                    <p>Join us for the annual coding competition where students showcase their programming skills. Get a chance to win exciting prizes!</p>
+                </div>
+                <hr style="border-top: 1.5px solid #e67e22; margin: 10px  auto; width: 60%;">
+            </div>
+            
+            <!-- Promotion Card 2: Inter-College Basketball Tournament -->
+            <div class="promotion-card">
+                <img src="basketball.jpeg" alt="Sports Event">
+                <div class="promotion-details">
+                    <h2>Inter-College Basketball Tournament</h2>
+                    <div class="details">
+                        <span>Date: September 5-7, 2024</span>
+                        <span>Organizer: Sports Club</span>
+                    </div>
+                    <p>Cheer for your college team in the upcoming basketball tournament. Register now to participate!</p>
+                </div>
+                <hr style="border-top: 1.5px solid #e67e22; margin: 10px  auto; width: 60%;">
+            </div>
+            
+            <!-- Promotion Card 3: College Hackathon -->
+            <div class="promotion-card">
+                <img src="haka.jpeg" alt="Hackathon">
+                <div class="promotion-details">
+                    <h2>College Hackathon 2024</h2>
+                    <div class="details">
+                        <span>Date: October 10-12, 2024</span>
+                        <span>Organizer: IT Club</span>
+                    </div>
+                    <p>Get ready to innovate and build solutions at the College Hackathon. Prizes, mentorship, and networking opportunities await!</p>
+                </div>
+                <hr style="border-top: 1.5px solid #e67e22; margin: 10px  auto; width: 60%;">
+            </div>
+            
+            <!-- Promotion Card 4: Art Exhibition -->
+            <div class="promotion-card">
+                <img src="art.jpeg" alt="Art Exhibition">
+                <div class="promotion-details">
+                    <h2>Annual Art Exhibition</h2>
+                    <div class="details">
+                        <span>Date: November 20, 2024</span>
+                        <span>Organizer: Fine Arts Department</span>
+                    </div>
+                    <p>Explore creativity at our annual art exhibition. Featuring diverse artworks from students and professional artists.</p>
+                </div>
+                <hr style="border-top: 1.5px solid #e67e22; margin: 10px  auto; width: 60%;">
+            </div>
+            
+            <!-- Promotion Card 5: Robotics Competition -->
+            <div class="promotion-card">
+                <img src="roboticCompe.jpeg" alt="Robotics Competition">
+                <div class="promotion-details">
+                    <h2>International Robotics Competition</h2>
+                    <div class="details">
+                        <span>Date: December 5-8, 2024</span>
+                        <span>Organizer: Robotics Club</span>
+                    </div>
+                    <p>Compete with teams from around the world in our prestigious robotics competition. Show your innovation and win prizes!</p>
+                </div>
+                <hr style="border-top: 1.5px solid #e67e22; margin: 10px  auto; width: 60%;">
+            </div>
+            
+            <!-- Promotion Card 6: Marathi Literature Festival -->
+            <div class="promotion-card">
+                <img src="marathi.jpeg" alt="Literature Festival">
+                <div class="promotion-details">
+                    <h2>Marathi Literature Festival</h2>
+                    <div class="details">
+                        <span>Date: January 15-17, 2025</span>
+                        <span>Organizer: Language Department</span>
+                    </div>
+                    <p>Celebrate Marathi literature and language beauty at our college. Engage in activities, readings, and more!</p>
+                </div>
+                <hr style="border-top: 1.5px solid #e67e22; margin: 10px  auto; width: 60%;">
+            </div>
+            
+            <!-- Add more promotion cards as needed -->
+            
+        </div>
+    </div>
+</body>
+</html>

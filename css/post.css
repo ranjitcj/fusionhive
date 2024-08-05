@@ -1,0 +1,87 @@
+
+.content .main-content .instagram-post{
+    display: grid;
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.content .main-content .post-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.content .main-content .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.content .main-content .username {
+    font-weight: bold;
+}
+
+.content .main-content .post-image {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    /* mix-blend-mode: screen; */
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.content .main-content .post-description {
+    padding: 10px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.content .main-content .post-description .content .main-content .username {
+    margin-right: 5px;
+}
+
+.content .main-content .post-actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.content .main-content .post-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #262626;
+}
+
+.content .main-content .post-comments {
+    padding: 10px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.content .main-content .comment {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.content .main-content .add-comment {
+    display: flex;
+    padding: 10px;
+}
+
+.content .main-content .add-comment input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.content .main-content .add-comment input::placeholder {
+    color: #8e8e8e;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Clubs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-image: url('globebg.jpg');
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-family: 'Verdana', sans-serif;
+            text-align: center;
+            color: #333;
+        }
+        .club {
+            display: flex;
+            align-items: flex-start;
+            border-left: 6px solid #06c7e9; /* Colored border on the left */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+            margin-bottom: 20px;
+            padding: 15px;
+            border-top-left-radius: 8px; /* Rounded top left corner */
+            border-bottom-left-radius: 8px; /* Rounded bottom left corner */
+            position: relative; /* Position for absolute elements inside */
+        }
+        .hr{
+            height: 2px;
+            background-color: #666;
+            border-radius: 10px;
+            width: 70%;
+            margin-inline: auto;
+        }
+        .club img {
+            width: 150px;
+            height: 150px;
+            border-top-left-radius: 8px; /* Rounded top left corner for image */
+            border-bottom-left-radius: 8px; /* Rounded bottom left corner for image */
+            margin-right: 20px;
+        }
+        .club-content {
+            flex: 1;
+            /* border: 1px solid rgb(156, 156, 156); */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding-top: 10px ;
+            padding-inline: 10px ;
+            backdrop-filter: blur(5px);
+            border-radius: 5px;
+        }
+        .club h2 {
+            font-family: 'Georgia', serif;
+            margin-top: 0;
+            color: #111;
+        }
+        .club p {
+            margin-bottom: 10px;
+            color: #333;
+            line-height: 1.6;
+        }
+        .club p:last-child {
+            margin-bottom: 0;
+        }
+        .apply-btn {
+            background-color: #06c7e9;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+        }
+        .apply-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .club {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px;
+            }
+            .club img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                margin: 0 0 10px 0;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px; /* Rounded top right corner for image in mobile */
+            }
+            .apply-btn {
+                position: relative;
+                margin-top: 10px;
+                bottom: auto;
+                right: auto;
+                width: 100%; /* Full width button in mobile */
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Colleges</h1>
+        <div class="hr"></div>
+
+        <div  class="club" style="background-image: url('');border-color:#b844c7 ;">
+            <img src="iitkanpurlogo.png" alt="iitkanpurlogo">
+            <div class="club-content">
+                <h2>IIT-KANPUR</h2>
+                <p >The Indian Institute of Technology Kanpur (IIT Kanpur) is one of India's premier engineering institutions located in Kanpur, Uttar Pradesh. Established in 1959, IIT Kanpur has been at the forefront of technological education and research in the country. The institute offers undergraduate, postgraduate, and doctoral programs across various engineering and science disciplines. With a strong emphasis on research and innovation, IIT Kanpur houses several state-of-the-art laboratories and research centers. The campus also promotes extracurricular activities and has a vibrant student community. Click on apply to see the
+                <p >Meeting Time: Mondays, 3:00 PM - 5:00 PM</p>
+                <p >Contact: John Doe (<a href="mailto:johndoe@example.com">johndoe@example.com</a>)</p>
+                <a href="/header/explore/post_Announcements/college/iit.html" class="apply-btn">View</a>
+            </div>
+        </div>
+
+        <div class="club" style="background-image: url('');">
+            <img src="coeplogo.jpeg" alt="coep logo">
+            <div class="club-content">
+                <h2>COEP</h2>
+                <p >The College of Engineering Pune (COEP), established in 1854, is one of the oldest engineering institutions in India. Located in Pune, Maharashtra, COEP offers a wide range of undergraduate and postgraduate programs in engineering and technology. Known for its strong emphasis on practical learning and research, COEP boasts state-of-the-art laboratories and a rich history of academic excellence. The college also fosters a vibrant campus life with numerous student clubs and extracurricular activities.</p>
+                <p >Meeting Time: Mondays, 3:00 PM - 5:00 PM</p>
+                <p >Contact: Sarah Johnson (<a style="color:#379bff;" href="mailto:sarahjohnson@example.com">sarahjohnson@example.com</a>)</p>
+                <a href="/header/explore/post_Announcements/college/coep.html" class="apply-btn">View</a>
+            </div>
+        </div>
+
+        <div class="club" style="background-image: url('');border-color: #ffcb31;">
+            <img src="pccoerlogo.webp" alt="pccoerlogo">
+            <div class="club-content">
+                <h2>PCCOER</h2>
+                <p >Pimpri Chinchwad College of Engineering and Research (PCCOER), established in 2014, is a fast-growing engineering college located in Pune, Maharashtra. Affiliated with Savitribai Phule Pune University, PCCOER offers undergraduate programs in various engineering disciplines. The college is committed to providing quality education through experienced faculty and modern infrastructure. PCCOER emphasizes research, innovation, and overall student development, encouraging participation in technical events, workshops, and extracurricular activities.</p>
+                <p >Meeting Time: Thursdays, 2:00 PM - 4:00 PM</p>
+                <p >Contact: David Lee (<a style="color:#379bff;" href="mailto:davidlee@example.com">davidlee@example.com</a>)</p>
+                <a href="/header/explore/post_Announcements/college/pccoer.html" class="apply-btn">View</a>
+            </div>
+        </div>
+
+        <div class="club" style="background-image: url('');border-color: #4b4b4b;">
+            <img src="viitlogo.png" alt="viit logo">
+            <div class="club-content">
+                <h2>VIIT</h2>
+                <p>Vishwakarma Institute of Information Technology (VIIT), established in 2002, is a prominent engineering college in Pune, Maharashtra. Affiliated with Savitribai Phule Pune University, VIIT offers undergraduate and postgraduate programs in various engineering disciplines. The institute is known for its strong academic foundation, experienced faculty, and focus on industry-relevant skills. VIIT provides a dynamic learning environment with state-of-the-art facilities, encouraging students to participate in research, innovation, and extracurricular activities.</p>
+                <p>Meeting Time: Thursdays, 2:00 PM - 4:00 PM</p>
+                <p>Contact: David Lee (<a href="mailto:davidlee@example.com">davidlee@example.com</a>)</p>
+                <a href="#" class="apply-btn">View</a>
+            </div>
+        </div>
+
+
+
+        <div class="club" style="background-image: url('');border-color: #fff959;">
+            <img src="pictlogo.png" alt="pictlogo">
+            <div class="club-content">
+                <h2>PICT</h2>
+                <p>Pune Institute of Computer Technology (PICT), founded in 1983, is a leading private engineering college in Pune, Maharashtra. Specializing in computer science, electronics, and information technology, PICT is renowned for its rigorous academic curriculum and high placement rates. The institute emphasizes research and innovation, providing students with modern laboratories and resources. PICT also encourages students to engage in various technical and cultural events, fostering a well-rounded educational experience.</p>
+                <p>Meeting Time: Saturdays, 10:00 AM - 12:00 PM</p>
+                <p>Contact: Michael Brown (<a href="mailto:michaelbrown@example.com">michaelbrown@example.com</a>)</p>
+                <a href="#" class="apply-btn">View</a>
+            </div>
+        </div>
+
+        <div class="club" style="background-image: url('');border-color: #ff9c40;">
+                    <img src="iitbombaybg.jpeg" alt="iitbombayLogo">
+                    <div class="club-content">
+                        <h2>IIT-Bombay</h2>
+                        <p>ndian Institute of Technology Bombay (IIT Bombay), established in 1958, is one of India's premier engineering and research institutions located in Mumbai, Maharashtra. IIT Bombay offers a comprehensive range of undergraduate, postgraduate, and doctoral programs in engineering, science, and humanities. Known for its cutting-edge research and innovation, IIT Bombay houses numerous state-of-the-art laboratories and research centers. The institute fosters a vibrant campus life with a multitude of student clubs, cultural events, and technical festivals.</p>
+                        <p>Meeting Time: Wednesdays, 5:00 PM - 7:00 PM</p>
+                        <p>Contact: Jane Smith (<a href="mailto:janesmith@example.com">janesmith@example.com</a>)</p>
+                        <a href="#" class="apply-btn">View</a>
+                    </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- https://www.freepik.com/vectors/research-background -->
+<!-- https://www.frc.edu/art/annual-art-student-exhibition -->
+<!-- https://codingartistweb.com/2022/09/how-to-detect-swipe-direction-with-javascript/ ->>>>>>--->
+<!-- https://www.youtube.com/playlist?list=PLNCevxogE3fgy0pAzVccadWKaQp9iHspz -->
+<!-- create an html webpage to display announcements/news from college. Make it such that a horizontal news bar should always scroll the latest news in short. Add as much details as you can. make it as the news/announcements should be one below other and each announcement card should contain a centered header in bold and the date of publish and name of publisher on right. which should be followed by the actual content. for now make 1 announcement regarding the open seats for second year student association. make it as descriptive as possible! create other announcement regarding recently declared Engineering results. add shadows wherever possible and different color elements. make the webpage responsive. -->

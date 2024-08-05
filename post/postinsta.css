@@ -1,0 +1,94 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} */
+
+.instagram-post {
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.post-image {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    /* mix-blend-mode: screen; */
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.post-description {
+    padding: 10px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.post-description .username {
+    margin-right: 5px;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.post-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #262626;
+}
+
+.post-comments {
+    padding: 10px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.comment {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.add-comment {
+    display: flex;
+    padding: 10px;
+}
+
+.add-comment input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.add-comment input::placeholder {
+    color: #8e8e8e;
+}

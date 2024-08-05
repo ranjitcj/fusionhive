@@ -1,0 +1,104 @@
+body {
+    font-family: 'Lora', serif;
+    background-color: #e7e3e3;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.admin-wrapper {
+    display: flex;
+    width: 100%;
+}
+.left-sidebar {
+    width: 20%;
+    background: #333;
+    padding: 20px;
+    height: 100vh; /* Full height */
+    box-sizing: border-box;
+}
+.left-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.left-sidebar ul li {
+    margin: 15px 0;
+}
+.left-sidebar ul li a {
+    color: #fafafa;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background 0.3s;
+}
+.left-sidebar ul li a:hover {
+    background: #ff6600;
+}
+.admin-content {
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.button-group {
+    margin-bottom: 20px;
+}
+.btn {
+    background: #040404;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    display: inline-block;
+}
+.btn:hover {
+    background: #f56404;
+}
+.content {
+    background: #fffdfd;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: #444 20px;
+}
+.content h2 {
+    color: #060606;
+}
+tr td{
+    color: #060606;
+}
+.page-title {
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #444;
+}
+table th {
+    background: #333;
+}
+table tr:nth-child(even) {
+    background: #fbf9f9;
+}
+.edit, .delete {
+    background: #060606;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+    display: inline-block;
+    margin: 0 5px;
+}
+.edit:hover {
+    background: #e65c00;
+}
+.delete:hover {
+    background: #cc5200;
+}

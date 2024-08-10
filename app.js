@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, 'fusionhive')));
 
 // Route handler for root path
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, '/fusionhive', '/index.php'));
+    res.sendFile(path.join(__dirname, 'fusionhive', 'index.php'));
 });
 
 // Start the server

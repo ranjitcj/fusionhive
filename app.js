@@ -1,7 +1,7 @@
 const express = require('express');
 const { exec } = require('child_process');
 const app = express();
-const port = 3000;
+const port = 8080;
 
 app.get('/', (req, res) => {
   exec('php-cgi index.php', (error, stdout, stderr) => {

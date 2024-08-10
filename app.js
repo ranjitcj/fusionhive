@@ -1,19 +1,14 @@
 const express = require("express");
-const path = require("path");
+const { createProxyMiddleware } = require("http-proxy-middleware");
+
 const app = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 3001;
 
-// Serve static files from the "fusionhive" directory
-app.use(express.static(path.join(__dirname, 'fusionhive')));
+// Proxy requests to the PHP server
+app.use("/", createProxyMiddleware({
+    target: "http://localhost:8000", // PHP server address
+    changeOrigin: true,
+    pathRewrite: { "^/": "/" }
+}));
 
-// Route handler for root path
-app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, 'fusionhive', 'index.php'));
-});
-
-// Start the server
-const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
-
-// Set keep-alive and headers timeout
-server.keepAliveTimeout = 120 * 1000;
-server.headersTimeout = 120 * 1000;
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));

@@ -1,0 +1,37 @@
+{
+    "name": "fusionhive",
+    "version": "1.0.0",
+    "description": "College website",
+    "main": "index.php",
+    "scripts": {
+        "start": "node index.js",
+        "test": "jest"
+    },
+    "keywords": [
+        "node",
+        "express",
+        "api"
+    ],
+    "author": "Vikram",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0"
+    },
+    "peerDependencies": {
+        "react": "^17.0.0"
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ranjitcj/fusionhive"
+    },
+    "bugs": {
+        "url": "https://github.com/ranjitcj/fusionhive"
+    },
+    "homepage": "https://github.com/ranjitcj/fusionhive"
+}

@@ -6,6 +6,8 @@ const port = 8000;
 app.get('/', (req, res) => {
   exec('php-cgi index.php', (error, stdout, stderr) => {
     if (error) {
+      console.error(`Error executing PHP script: ${error.message}`);
+      console.error(`stderr: ${stderr}`);
       res.status(500).send('Error executing PHP script');
       return;
     }

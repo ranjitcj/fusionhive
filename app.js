@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 // const phpServerUrl = "http://localhost:8080/index.php"; // Replace with the actual URL of your PHP server
-const phpServerUrl = "https://fusionhive/index.php.";
+const phpServerUrl = "https://fusionhive/index.php";
 app.get("/", (req, res) => {
 	res.redirect(phpServerUrl);
 });

@@ -2,13 +2,13 @@
   "name": "FusionHive",
   "version": "1.0.0",
   "description": "College Website",
-  "main": "app.js",
+  "main": "index.php",
   "repository": "https://github.com/ranjitcj/fusionhive",
   "author": "Web Developers",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "node app.js"
+    "start": "node index.php"
   },
   "dependencies": {
     "express": "^4.18.2"
